@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\fe410\\Desktop\\C# - Projetos didáticos\\Pizzaria_53\\src\\WebAPI_FAM.Domain\\WebAPI_FAM.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\fe410\\Desktop\\C# - Projetos didáticos\\Pizzaria_53\\src\\WebAPI_FAM.Domain\\WebAPI_FAM.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fe410\\Desktop\\C# - Projetos didáticos\\Pizzaria_53\\src\\WebAPI_FAM.Domain\\WebAPI_FAM.Domain.csproj",
+        "projectName": "WebAPI_FAM.Domain",
+        "projectPath": "C:\\Users\\fe410\\Desktop\\C# - Projetos didáticos\\Pizzaria_53\\src\\WebAPI_FAM.Domain\\WebAPI_FAM.Domain.csproj",
+        "packagesPath": "C:\\Users\\fe410\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fe410\\Desktop\\C# - Projetos didáticos\\Pizzaria_53\\src\\WebAPI_FAM.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fe410\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nugget-itlr.dev.tsbr.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
