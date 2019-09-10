@@ -19,7 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{6D9A0A51-8B58-4415-A9EB-B254044F8C40}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI_FAM.Domain", "src\WebAPI_FAM.Domain\WebAPI_FAM.Domain.csproj", "{7A524156-5BFA-47BD-89B2-3A70FA2F95BF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A524156-5BFA-47BD-89B2-3A70FA2F95BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A524156-5BFA-47BD-89B2-3A70FA2F95BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A524156-5BFA-47BD-89B2-3A70FA2F95BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A524156-5BFA-47BD-89B2-3A70FA2F95BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -31,6 +43,7 @@ Global
 		{656227CA-1F07-4957-BFAD-2C97FC6D3F90} = {768A2A95-881A-4FC8-A247-207E90DA9AE4}
 		{AD16285F-E58A-4F1F-B08C-46F3F2086A4E} = {656227CA-1F07-4957-BFAD-2C97FC6D3F90}
 		{6D9A0A51-8B58-4415-A9EB-B254044F8C40} = {656227CA-1F07-4957-BFAD-2C97FC6D3F90}
+		{7A524156-5BFA-47BD-89B2-3A70FA2F95BF} = {256CD135-156A-4A20-8CF7-D1019F5A4931}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10253ED3-92AD-4EDE-8A0E-42FF4EF6B658}
