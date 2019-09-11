@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebAPI_FAM.Domain.Models
+namespace Pizzaria_53.Domain.Models
 {
     class Produto
     {
@@ -10,7 +10,7 @@ namespace WebAPI_FAM.Domain.Models
         public float Valor { get; set; }
         public TamanhoProduto TamanhoProdutoId { get; set; }
         public TipoProduto TipoProdutoId { get; set; }
-        public DateTime? Datainclusao { get; set; }
+        public DateTime Datainclusao { get; set; }
         public DateTime? DataAlteracao { get; set; }
     }
 }

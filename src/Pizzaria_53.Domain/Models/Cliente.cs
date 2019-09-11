@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebAPI_FAM.Domain.Models
+namespace Pizzaria_53.Domain.Models
 {
     class Cliente
     {
@@ -9,7 +9,7 @@ namespace WebAPI_FAM.Domain.Models
         public string EMail { get; set; }
         public int Telefone { get; set; }
         public Endereco EnderecoId { get; set; }
-        public DateTime? DataInclusao { get; set; }
+        public DateTime DataInclusao { get; set; }
         public DateTime? DataAlteracao { get; set; }
     }
 }

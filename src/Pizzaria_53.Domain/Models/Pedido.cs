@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebAPI_FAM.Domain.Models
+namespace Pizzaria_53.Domain.Models
 {
     class Pedido
     {
@@ -10,7 +10,7 @@ namespace WebAPI_FAM.Domain.Models
         public string Descricao { get; set; }
         public FormaPagamento FormaPagamentoId { get; set; }
         public Status StatusId { get; set; }
-        public DateTime? DataInclusao { get; set; }
+        public DateTime DataInclusao { get; set; }
         public DateTime? DataAlteracao { get; set; }
     }
 }
