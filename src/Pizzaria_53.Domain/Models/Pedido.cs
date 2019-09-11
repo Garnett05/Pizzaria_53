@@ -1,16 +1,13 @@
-﻿using System;
-
-namespace Pizzaria_53.Domain.Models
+﻿namespace Pizzaria_53.Domain.Models
 {
-    class Pedido
+    class Pedido : BaseModel
     {
-        public Guid Id { get; protected set; }
         public int Quantidade { get; set; }
         public float ValorTotal { get; set; }
         public string Descricao { get; set; }
         public FormaPagamento FormaPagamentoId { get; set; }
         public Status StatusId { get; set; }
-        public DateTime DataInclusao { get; set; }
-        public DateTime? DataAlteracao { get; set; }
+        public Cliente ClienteId { get; set; }
+        public Pizzaria PizzariaId { get; set; }
     }
 }

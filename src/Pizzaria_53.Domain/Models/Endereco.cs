@@ -1,14 +1,9 @@
-﻿using System;
-
-namespace Pizzaria_53.Domain.Models
+﻿namespace Pizzaria_53.Domain.Models
 {
-    class Endereco
+    class Endereco : BaseModel
     {
-        public Guid Id { get; protected set; }
         public string Logadouro { get; set; }
         public int Numero { get; set; }
         public string Complemento { get; set; }
-        public DateTime DataInclusao { get; set; }
-        public DateTime? DataAlteracao { get; set; }
     }
 }
