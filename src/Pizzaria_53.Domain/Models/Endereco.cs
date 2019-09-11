@@ -1,6 +1,6 @@
 ﻿namespace Pizzaria_53.Domain.Models
 {
-    class Endereco : BaseModel
+    public class Endereco : BaseModel
     {
         public string Logadouro { get; set; }
         public int Numero { get; set; }

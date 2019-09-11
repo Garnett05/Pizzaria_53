@@ -1,6 +1,6 @@
 ﻿namespace Pizzaria_53.Domain.Models
 {
-    class Cliente : BaseModel
+    public class Cliente : BaseModel
     {
         public string Nome { get; set; }
         public string EMail { get; set; }

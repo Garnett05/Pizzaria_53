@@ -1,6 +1,6 @@
 ﻿namespace Pizzaria_53.Domain.Models
 {
-    class Pedido : BaseModel
+    public class Pedido : BaseModel
     {
         public int Quantidade { get; set; }
         public float ValorTotal { get; set; }
