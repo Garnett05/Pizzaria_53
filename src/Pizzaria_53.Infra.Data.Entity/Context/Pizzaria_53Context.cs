@@ -30,7 +30,6 @@ namespace Pizzaria_53.Infra.Data.Entity.Context
             modelBuilder.ApplyConfiguration(new TamanhoProdutoMap());
             modelBuilder.ApplyConfiguration(new TipoProdutoMap());
 
-
             base.OnModelCreating(modelBuilder);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
