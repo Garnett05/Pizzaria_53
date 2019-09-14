@@ -8,7 +8,18 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
     {
         public void Configure(EntityTypeBuilder<ItensPedido> builder)
         {
-            throw new System.NotImplementedException();
+            builder.ToTable("ITENS_PEDIDO");
+
+            builder
+                .HasOne(a => a.PedidoId)
+                .WithMany()
+                .HasForeignKey(f => f.PedidoId);
+
+            builder
+                .HasOne(a => a.ProdutoId)
+                .WithMany()
+                .HasForeignKey(f => f.ProdutoId);
+
         }
     }
 }

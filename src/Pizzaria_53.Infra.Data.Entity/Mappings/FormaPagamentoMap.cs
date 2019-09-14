@@ -8,7 +8,26 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
     {
         public void Configure(EntityTypeBuilder<FormaPagamento> builder)
         {
-            throw new System.NotImplementedException();
+            builder.ToTable("FORMA_PAGAMENTO");
+
+            builder.Property(c => c.Id)
+                .HasColumnName("fp_id");
+
+            builder.Property(c => c.Descricao)
+                .HasColumnName("fp_descricao")
+                .HasColumnType("varchar(45)")
+                .HasMaxLength(45)
+                .IsRequired();
+
+            builder.Property(c => c.DataInclusao)
+                .HasColumnName("fp_datainclusao")
+                .HasColumnType("datetime")
+                .IsRequired();
+
+            builder.Property(c => c.DataAlteracao)
+                .HasColumnName("fp_dataalteracao")
+                .HasColumnType("datetime");
         }
+
     }
 }

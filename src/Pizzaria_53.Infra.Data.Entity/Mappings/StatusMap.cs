@@ -8,7 +8,25 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
     {
         public void Configure(EntityTypeBuilder<Status> builder)
         {
-            throw new System.NotImplementedException();
+            builder.ToTable("STATUS");
+
+            builder.Property(c => c.Id)
+                .HasColumnName("stt_id");
+
+            builder.Property(c => c.Descricao)
+                .HasColumnName("stt_descricao")
+                .HasColumnType("varchar(45)")
+                .HasMaxLength(45)
+                .IsRequired();
+
+            builder.Property(c => c.DataInclusao)
+                .HasColumnName("stt_datainclusao")
+                .HasColumnType("datetime")
+                .IsRequired();
+
+            builder.Property(c => c.DataAlteracao)
+                .HasColumnName("stt_dataalteracao")
+                .HasColumnType("datetime");
         }
     }
 }

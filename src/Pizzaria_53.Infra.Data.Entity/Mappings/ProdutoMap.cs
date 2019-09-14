@@ -8,7 +8,46 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
     {
         public void Configure(EntityTypeBuilder<Produto> builder)
         {
-            throw new System.NotImplementedException();
+            builder.ToTable("PRODUTO");
+
+            builder.Property(c => c.Id)
+                .HasColumnName("prod_id");
+
+            builder.Property(c => c.Nome)
+                .HasColumnName("prod_nome")
+                .HasColumnType("varchar(50)")
+                .HasMaxLength(50)
+                .IsRequired();
+
+            builder.Property(c => c.Descricao)
+                .HasColumnName("prod_descricao")
+                .HasColumnType("varchar(100)")
+                .HasMaxLength(100)
+                .IsRequired();
+
+            builder.Property(c => c.Valor)
+                .HasColumnName("prod_valor")
+                .HasColumnType("decimal")
+                .IsRequired();
+
+            builder.Property(c => c.DataInclusao)
+                .HasColumnName("prod_datainclusao")
+                .HasColumnType("datetime")
+                .IsRequired();
+
+            builder.Property(c => c.DataAlteracao)
+                .HasColumnName("prod_dataalteracao")
+                .HasColumnType("datetime");
+
+            builder
+                .HasOne(p => p.TamanhoProdutoId)
+                .WithMany()
+                .HasForeignKey(f => f.TamanhoProdutoId);
+            builder
+                .HasOne(p => p.TipoProdutoId)
+                .WithMany()
+                .HasForeignKey(f => f.TipoProdutoId);
+
         }
     }
 }
