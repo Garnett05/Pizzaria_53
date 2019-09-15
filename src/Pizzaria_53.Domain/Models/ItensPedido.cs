@@ -1,8 +1,12 @@
-﻿namespace Pizzaria_53.Domain.Models
+﻿using System;
+
+namespace Pizzaria_53.Domain.Models
 {
     public class ItensPedido
     {
-        public Produto ProdutoId { get; set; }
-        public Pedido PedidoId { get; set; }
+        public Guid PedidoId { get; set; }
+        public Guid ProdutoId { get; set; }
+        public Produto Produto { get; set; }
+        public Pedido Pedido { get; set; }
     }
 }

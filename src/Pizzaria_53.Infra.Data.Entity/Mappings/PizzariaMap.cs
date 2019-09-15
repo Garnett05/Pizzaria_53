@@ -40,9 +40,8 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
                 .HasColumnType("datetime");
 
             builder
-                .HasOne(p => p.EnderecoId)
-                .WithMany()
-                .HasForeignKey(f => f.EnderecoId);
+                .HasOne(p => p.Endereco)
+                .WithOne();
         }
     }
 }

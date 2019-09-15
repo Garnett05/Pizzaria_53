@@ -39,24 +39,20 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
                 .HasColumnType("datetime");
 
             builder
-                .HasOne(p => p.ClienteId)
-                .WithMany()
-                .HasForeignKey(f => f.ClienteId);
+                .HasOne(p => p.Cliente)
+                .WithOne();
 
             builder
-                .HasOne(p => p.PizzariaId)
-                .WithMany()
-                .HasForeignKey(f => f.PizzariaId);
+                .HasOne(p => p.Pizzaria)
+                .WithOne();
 
             builder
-                .HasOne(p => p.FormaPagamentoId)
-                .WithMany()
-                .HasForeignKey(f => f.FormaPagamentoId);
+                .HasMany(p => p.ListaFormaPagamento)
+                .WithOne();
 
             builder
-                .HasOne(p => p.StatusId)
-                .WithMany()
-                .HasForeignKey(f => f.StatusId);
+                .HasOne(p => p.Status)
+                .WithOne();
         }
     }
 }

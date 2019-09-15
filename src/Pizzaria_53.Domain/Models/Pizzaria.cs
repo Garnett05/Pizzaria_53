@@ -5,6 +5,6 @@
         public string Nome { get; set; }
         public int Telefone { get; set; }
         public string EMail { get; set; }
-        public Endereco EnderecoId { get; set; }
+        public Endereco Endereco { get; set; }
     }
 }

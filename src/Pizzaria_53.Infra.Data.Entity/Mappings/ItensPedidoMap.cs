@@ -11,15 +11,17 @@ namespace Pizzaria_53.Infra.Data.Entity.Mappings
             builder.ToTable("ITENS_PEDIDO");
 
             builder
-                .HasOne(a => a.PedidoId)
-                .WithMany()
-                .HasForeignKey(f => f.PedidoId);
+                .HasKey(c => new { c.PedidoId, c.ProdutoId });
 
             builder
-                .HasOne(a => a.ProdutoId)
-                .WithMany()
-                .HasForeignKey(f => f.ProdutoId);
+                .HasOne(c => c.Pedido)
+                .WithMany(p => p.ListaItensPedidos)
+                .HasForeignKey(c => c.PedidoId);
 
+            builder
+                .HasOne(c => c.Produto)
+                .WithMany(p => p.ListaItensPedidos)
+                .HasForeignKey(c => c.ProdutoId);
         }
     }
 }
