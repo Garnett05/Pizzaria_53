@@ -4,7 +4,7 @@ using Pizzaria_53.Infra.Data.Entity.Mappings;
 
 namespace Pizzaria_53.Infra.Data.Entity.Context
 {
-    class Pizzaria_53Context : DbContext
+    public class Pizzaria_53Context : DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
