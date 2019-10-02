@@ -14,5 +14,6 @@ namespace Pizzaria_53.Domain.Interfaces
         void Alterar(TModel obj);
 
         void Remover(Guid id);
+        //teste
     }
 }
